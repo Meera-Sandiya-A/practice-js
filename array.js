@@ -108,7 +108,7 @@
 
 // // Another Array methods
 
-const array = ["hi", "hello", "welcome"];
+// const array = ["hi", "hello", "welcome"];
 
 // // concat
 // const newArr = num1.concat(num2, num3, "hi", "hello", 9);
@@ -125,7 +125,7 @@ const array = ["hi", "hello", "welcome"];
 // array.splice(1, 2, "orange");
 // console.log(array);
 
-const value = [2, 4, 6, 8];
+// const value = [2, 4, 6, 8];
 
 // // fill
 // value.fill(0);
@@ -141,8 +141,22 @@ const value = [2, 4, 6, 8];
 // const reverseValue = value.reverse();
 // console.log(reverseValue);
 
-// sort
-const unsorted = [6, 9, 2, 4, 1, 5];
-// unsorted.sort((a, b) => a - b);
-unsorted.sort((a, b) => b - a);
-console.log(unsorted);
+// // sort
+// // numeric sort
+// const unsorted = [6, 9, 2, 4, 1, 5];
+// // unsorted.sort((a, b) => a - b);
+// unsorted.sort((a, b) => b - a);
+// console.log(unsorted);
+
+// // Alphabetic sort
+// const months = ["march", "jan", "april", "may"];
+// months.sort();
+// console.log(months);
+
+// const sortNum = [3, 800, 2000, 1, 10000];
+// sortNum.sort();
+// console.log(sortNum);
+
+// // sort random array
+// sortNum.sort(() => 0.5 - Math.random());
+// console.log(sortNum);
