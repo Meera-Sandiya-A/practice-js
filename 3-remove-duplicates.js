@@ -9,17 +9,19 @@
 
 // Solution-1 With built-in Js function
 // ---------------------------------------------
-// function removeDuplicates(nums) {
-//   for (let i = 0; i < nums.length - 1; i++) {
-//     if (nums[i] === nums[i + 1]) {
-//       nums.splice(i + 1, 1);
-//       i--;
-//     }
-//   }
-//   return nums; // [1, 2]
-//   //   return nums.length; // 2
-// }
-// console.log(removeDuplicates([1, 1, 2]));
+function removeDuplicates(nums) {
+  nums.sort((a, b) => a - b);
+
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums.splice(i + 1, 1);
+      i--;
+    }
+  }
+  return nums; // [1, 2]
+  //   return nums.length; // 2
+}
+console.log(removeDuplicates([1, 1, 2]));
 
 // Time complexity: O(n)
 // Space complexity: O(1)
@@ -30,6 +32,7 @@
 // -------------------------------------------------
 // function removeDuplicates(nums) {
 //   if (nums.length === 0) return 0;
+// nums.sort((a,b)=> a-b);
 
 //   let i = 0;
 
