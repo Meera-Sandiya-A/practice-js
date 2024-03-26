@@ -15,21 +15,21 @@
 
 // Solution-2
 // ----------------------------------------------
-function stringToArray1(str) {
-  let resultArray = [];
-  let tempString = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== " ") {
-      tempString += str[i];
-    } else if (tempString.trim()) {
-      resultArray.push(tempString);
-      tempString = "";
-    }
-  }
-  resultArray.push(tempString);
+// function stringToArray1(str) {
+//   let resultArray = [];
+//   let tempString = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== " ") {
+//       tempString += str[i];
+//     } else if (tempString.trim()) {
+//       resultArray.push(tempString);
+//       tempString = "";
+//     }
+//   }
+//   resultArray.push(tempString);
 
-  return resultArray;
-}
-const strings = "Robin hello  ho Singh";
-const wordArray = stringToArray1(strings);
-console.log(wordArray);
+//   return resultArray;
+// }
+// const strings = "Robin hello  ho Singh";
+// const wordArray = stringToArray1(strings);
+// console.log(wordArray);

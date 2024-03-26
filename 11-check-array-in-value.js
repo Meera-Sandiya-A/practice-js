@@ -5,21 +5,21 @@
 
 // Solution-1
 // ---------------------------------------------
-function check(arr, value) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === value) {
-      return true;
-    }
-  }
-  return false;
-}
-const array = [2, 1, 3, 4, 5, 6, 7, 8];
-console.log(check(array, 6));
+// function check(arr, value) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// const array = [2, 1, 3, 4, 5, 6, 7, 8];
+// console.log(check(array, 6));
 
-// ==================================================
+// // ==================================================
 
-// Solution-2
-// -----------------------------------------------
-const fruits = ["apple", "berry", "orange"];
-const hasApple = fruits.includes("apple");
-console.log(hasApple);
+// // Solution-2
+// // -----------------------------------------------
+// const fruits = ["apple", "berry", "orange"];
+// const hasApple = fruits.includes("apple");
+// console.log(hasApple);

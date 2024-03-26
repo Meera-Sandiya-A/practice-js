@@ -5,40 +5,22 @@
 
 // Solution-1
 // ----------------------------------
-function isVow(a) {
-  const vowelCode = {
-    97: "a",
-    101: "e",
-    105: "i",
-    111: "o",
-    117: "u",
-  };
 
-  for (let i = 0; i < a.length; i++) {
-    if (vowelCode[a[i]]) {
-      a[i] = vowelCode[a[i]];
-    }
-  }
-  return a;
-}
+// function isVowel1(vowel) {
+//   let vowelCode = {
+//     97: "a",
+//     101: "e",
+//     105: "i",
+//     111: "o",
+//     117: "u",
+//   };
 
-console.log(isVow([97, 101, 103, 105, 111, 200]));
+//   for (let i = 0; i < vowel.length; i++) {
+//     if (vowelCode[vowel[i]]) {
+//       vowel[i] = vowelCode[vowel[i]];
+//     }
+//   }
+//   return vowel;
+// }
 
-function isVowel1(vowel) {
-  let vowelCode = {
-    97: "a",
-    101: "e",
-    105: "i",
-    111: "o",
-    117: "u",
-  };
-
-  for (let i = 0; i < vowel.length; i++) {
-    if (vowelCode[vowel[i]]) {
-      vowel[i] = vowelCode[vowel[i]];
-    }
-  }
-  return vowel;
-}
-
-console.log(isVowel1([97, 101, 103, 105, 111, 200]));
+// console.log(isVowel1([97, 101, 103, 105, 111, 200]));
