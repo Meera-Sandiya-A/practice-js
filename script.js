@@ -143,35 +143,6 @@
 
 // /////////////////////////////////////////////////////
 
-// // 10) Palindrome using for loop
-// function palindrome(str) {
-//   let j = str.length - 1;
-
-//   for (i = 0; i < str.length; i++) {
-//     if (str[i] !== str[j]) {
-//       return "It is not a palindrome";
-//     }
-//     j--;
-//   }
-//   return "It is palindrome";
-// }
-// // console.log(palindrome("car"));
-
-// /////////////////////////////////////////////////////
-
-// // 11) palindrome check
-// let strings = "aba";
-// function isPalindrome(str) {
-//   let startIdx = 0;
-//   let endIdx = str.length - 1;
-
-//   startIdx === endIdx ? "It is palindrome" : "It is not palindrome";
-// }
-
-// // console.log(palindrome(strings));
-
-// //////////////////////////////////////////////////////
-
 // // 12) Check given number is prime number
 // const primeNum = 19;
 // function primeNumber(n) {
@@ -275,49 +246,6 @@
 // // console.log(isLeapYear1(2018));
 
 // ////////////////////////////////////////////////////////////
-
-// // 19) Count the occurance of each character in a given string
-// function countCharacters(str) {
-//   let charCount = {};
-
-//   for (let char of str) {
-//     // Ignore spaces (if you want to count spaces, remove the if condition)
-//     if (char !== " ") {
-//       charCount[char] = (charCount[char] || 0) + 1;
-//     }
-//   }
-//   return charCount;
-// }
-// // console.log(countCharacters("hello world"));
-
-// ////////////////////////////////////////////////////////////////////////
-
-// // 20) Count the number of vowels using for loop
-// function countVowels(str) {
-//   const vowels = "aeiouAEIOU";
-//   let count = 0;
-
-//   for (let letter of str) {
-//     if (vowels.includes(letter)) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-// // console.log(countVowels("Hello MEera")); // 5
-
-// //////////////////////////////////////////////////////////
-
-// // 21) Check if given string is panagram or not
-// function isPanagram(str) {
-//   const alphabetSet = new Set("abcdefghijklmnopqrstuvwxyz");
-
-//   for (let char of str.toLowerCase()) {
-//     alphabetSet.delete(char);
-//   }
-//   return alphabetSet.size === 0 ? "It is panagram" : "It is not panagram";
-// }
-// // console.log(isPanagram("The quick Brown fox jumps over the lazy dog"));
 
 // //////////////////////////////////////////////////////
 

@@ -1,4 +1,4 @@
-// Remove First and Last Character Part Two
+// Remove First and Last Character
 // Given a string containing a sequence of character sequences separated by commas.
 // Write a function which returns a new string containing the same character sequences
 // except the first and the last ones but this time separated by spaces.
@@ -40,7 +40,7 @@ function midString(str) {
   }
 
   // Handle empty or single element case
-  if (result.length <= 1) {
+  if (result.length <= 2) {
     return null;
   }
 
@@ -55,31 +55,48 @@ function midString(str) {
 }
 
 // Test cases
-console.log(midString("hello,world,beautiful")); // Output: "world beautiful"
-console.log(midString("")); // Output: null
-console.log(midString("a")); // Output: null
+console.log(midString("hello,world, beautiful")); // Output: "world beautiful"
+// console.log(midString("")); // Output: null
+// console.log(midString("a")); // Output: null
+
+// time Complexity : O(n)
 
 // =================================================================
 
-// Solution-2
+// Solution-2 with Built-in
 // -----------------------------------------------------------------
-function array(string) {
-  // Split the string into an array using commas as separators
-  const elements = string.split(",");
+// function array(string) {
+//   // const elements = string; // array
+//   const elements = string.split(",");
 
-  // Check if the array is empty or has only two element
-  if (elements.length <= 2) {
-    return null;
-  }
+//   if (elements.length <= 2) {
+//     return null;
+//   }
 
-  // Extract elements from index 1 (excluding first) to length-1 (excluding last)
-  const middleElements = elements.slice(1, elements.length - 1);
+//   const middleElements = elements.slice(1, elements.length - 1); // [ '1', '2', '3' ]
 
-  // Join the middle elements with spaces as separators
-  return middleElements.join(" ");
-}
-console.log(array("1,2,3"));
-console.log(array("1,2,3,4,5"));
-console.log(array("1,2"));
-console.log(array("1"));
-console.log(array(""));
+//   return middleElements.join(" "); // 1 2 3
+// }
+// // console.log(array(["1", "2", "3", "4"])); //for array
+// console.log(array("hello,1,2,3,hi"));
+// console.log(array("1,2"));
+// console.log(array("1"));
+// console.log(array(""));
+
+// // Time Complexity: O(n)
+
+// =====================================================================================
+
+// Solution-3 Array to string
+// ------------------------------------------------------------
+// function removeChar(arr) {
+//   let newStr = "";
+//   for (let i = 1; i < arr.length - 1; i++) {
+//     newStr += arr[i] + " ";
+//   }
+//   return newStr.trim(); // removes last space
+// }
+// console.log(removeChar(["hello", "world", "meera", "sandiya", "beautiful"])); // world meera sandiya
+// // console.log(removeChar("hello, meera, sandiya")); // ello, meera, sandiy
+
+// // Time Complexity: O(n)

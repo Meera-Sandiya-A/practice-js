@@ -20,7 +20,7 @@
 // }
 // console.log(isPangram("The brown fox quick jumps over the lazy dog"));
 
-// Time Complexity:
+// Time Complexity: O(n)
 
 // ===========================================================================
 
@@ -44,3 +44,5 @@
 //   return "It is true";
 // }
 // console.log(isPanagram1("The brown fox quick jumps over the dog"));
+
+// time complexity: O(n)

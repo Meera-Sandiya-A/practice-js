@@ -5,7 +5,6 @@
 
 // Solution-1
 // ----------------------------------
-
 // function isVowel1(vowel) {
 //   let vowelCode = {
 //     97: "a",
@@ -24,3 +23,23 @@
 // }
 
 // console.log(isVowel1([97, 101, 103, 105, 111, 200]));
+
+// time complexity: O(n)
+// ============================================================
+
+// // Solution-2 Count the number of vowels
+// -------------------------------------------------
+// function countVowels(str) {
+//   const vowels = "aeiouAEIOU";
+//   let count = 0;
+
+//   for (let letter of str) {
+//     if (vowels.includes(letter)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// // console.log(countVowels("Hello MEera")); // 5
+
+// time complexity: O(n)
