@@ -54,7 +54,7 @@
 
 //   return { max, min };
 // }
-// // console.log(maxMin(num));
+// console.log(maxMin(num));
 
 // ////////////////////////////////////////////
 
